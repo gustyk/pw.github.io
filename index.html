@@ -2,7 +2,7 @@
 
 
 <link rel="shortcut icon" type="image/x-icon" href="./material/lectures/images/favicon.ico" />
-<title>Web Programming Course (F28WP)</title>
+<title>MK Pemrograman Web - Sistem Informasi UISI</title>
 
 <style>
 #particles-js {
@@ -23,7 +23,9 @@
 
 <table align="center"><tr><td>
 
-F28WP - <a href='http://www.macs.hw.ac.uk/students/cs/courses/f28wp-web-programming/'>Web Programming</a>
+Pemrograman Web
+<br>
+Dosen: Tikno, ST., M.Kom.
 	
 <br>
 <br>
@@ -31,16 +33,16 @@ F28WP - <a href='http://www.macs.hw.ac.uk/students/cs/courses/f28wp-web-programm
 <table>
 <thead id="headtoc">
 <tr>
-<td>Wk      		</td>
+<td>Pekan Ke-      		</td>
 <td>No      		</td>
-<td>Topic   		</td>
+<td>Topik   		</td>
 <td>        		</td>
-<td>Lecture 		</td>
+<td>Materi 		</td>
 <td>        		</td>
-<td>Notes   		</td>
-<td>Tasks           </td>
-<td>Quizzes    		</td>
-<td>Crosswords    	</td>
+<td>Catatan   		</td>
+<td>Tugas           </td>
+<td>Kuis    		</td>
+<td>TTS    	</td>
 </tr>
 </thead>
 <tbody id="bodytoc">
@@ -49,7 +51,9 @@ F28WP - <a href='http://www.macs.hw.ac.uk/students/cs/courses/f28wp-web-programm
 
 <br>
 <p>
-Assessment:<br>Exam 50% <br>Coursework (50%) 
+Penilaian:
+<br>Tugas dll 40% 
+<br>Tugas Akhir 60%)
 </p>
 
 </td></tr></table>
@@ -73,29 +77,29 @@ material/
 // l:lecture, n:notes, q:quiz, t:labs(tasks), c:crosswords, e:extra-links
 	
 let toc = [
-  { wk: '1',  no: '00', name: 'Introduction'                                                        ,  l:true, n: true , t:false, q: true,  c:true    }, 
-  {           no: '01', name: 'Internet and Web'                                                    ,  l:true, n: true , t:true,  q: true,  c:true    },
-  {           no: '02', name: 'Fundamentals of HTML and CSS'                                        ,  l:true, n: true , t:true,  q: true,  c:true    },
-  { wk: '2',  no: '03', name: 'Productive Web Programming'                                          ,  l:true, n: true , t:true,  q: true,  c:true    },
-  {           no: '04', name: 'JavaScript Prt 1 (Basics)'                                           ,  l:true, n: true , t:true,  q: true,  c:true    },
-  { wk: '3',  no: '05', name: 'JavaScript Prt 2'                                                    ,  l:true, n: true , t:true,  q: true,  c:false   },
-  {           no: '06', name: 'JavaScript & DOM'                                                    ,  l:true, n: true , t:false, q: true,  c:false   },
-  { wk: '4',  no: '07', name: 'JQuery'                                                              ,  l:true, n: true , t:true,  q: true,  c:false   },
-  {           no: '08', name: 'AJAX & JSON'  				                                        ,  l:true, n: true , t:true,  q: true,  c:false   },
-  { wk: '5',  no: '09', name: 'XML & RSS'  				                                            ,  l:true, n: false, t:true,  q: false, c:false   },
-  {		      no: '10', name: 'Revision'  				                                            ,  l:true, n: false, t:true,  q: false, c:false   },
+  { wk: '1',  no: '00', name: 'Introduction'                                                        ,  l:false, n: false , t:false, q: false,  c:false    }, 
+  {           no: '01', name: 'Internet and Web'                                                    ,  l:true, n: false , t:false,  q: false,  c:false    },
+  {           no: '02', name: 'Fundamentals of HTML and CSS'                                        ,  l:false, n: false , t:false,  q: false,  c:false    },
+  { wk: '2',  no: '03', name: 'Productive Web Programming'                                          ,  l:false, n: false , t:false,  q: false,  c:false    },
+  {           no: '04', name: 'JavaScript Prt 1 (Basics)'                                           ,  l:false, n: false , t:false,  q: false,  c:false    },
+  { wk: '3',  no: '05', name: 'JavaScript Prt 2'                                                    ,  l:false, n: false , t:false,  q: false,  c:false   },
+  {           no: '06', name: 'JavaScript & DOM'                                                    ,  l:false, n: false , t:false, q: false,  c:false   },
+  { wk: '4',  no: '07', name: 'JQuery'                                                              ,  l:false, n: false , t:false,  q: false,  c:false   },
+  {           no: '08', name: 'AJAX & JSON'  				                                        ,  l:false, n: false , t:false,  q: false,  c:false   },
+  { wk: '5',  no: '09', name: 'XML & RSS'  				                                            ,  l:false, n: false, t:false,  q: false, c:false   },
+  {		      no: '10', name: 'Revision'  				                                            ,  l:false, n: false, t:false,  q: false, c:false   },
   { wk: '6',  no: '-',  name: 'Reading Week (No Lectures)'                                                                                            },
-  { wk: '7',  no: '11', name: 'Data, Cookies & Files'                                               ,  l:true, n: true,  t:false, q: false, c:false   },
-  {	    	  no: '12', name: 'NodeJS Prt1'                                                         ,  l:true, n: true,  t:true,  q: true,  c:false   },
-  { wk: '8',  no: '13', name: 'NodeJS Prt2'                                                         ,  l:true, n: true,  t:true,  q: false, c:false   },
-  {		      no: '14', name: 'NodeJS & DB'                                                         ,  l:true, n: true,  t:false, q: true,  c:false   },
-  { wk: '9',  no: '15', name: 'Security (Encryption, Safety, Passwords)'                            ,  l:true, n: true,  t:true,  q: true,  c:false   },
-  {           no: '16', name: 'Hybrid Apps and Mobile (Framework7, Bootstrap, React, AngularJS)	'   ,  l:true, n: false, t:false, q: false, c:false   },
-  { wk: '10', no: '17', name: 'Web Services (SOAP, REST)'                                           ,  l:true, n: true,  t:true,  q: true,  c:false   },
-  {	    	  no: '18', name: 'Design (Web-Analytics, Adaptive UI and UX, Web Robots, Business)'    ,  l:true, n: true,  t:false, q: false, c:false   },
-  { wk: '11', no: '19', name: 'Typescript'                                                          ,  l:true, n: false, t:false, q: false, c:false   },
-  {           no: '20', name: 'Review & Support Lecture'                                            ,  l:true, n: false, t:false, q: false, c:false   },
-  { wk: '12', no: '21', name: 'Review & Support Lecture'                                            ,  l:true, n: false, t:false, q: false, c:false   }
+  { wk: '7',  no: '11', name: 'Data, Cookies & Files'                                               ,  l:false, n: false,  t:false, q: false, c:false   },
+  {	    	  no: '12', name: 'NodeJS Prt1'                                                         ,  l:false, n: false,  t:false,  q: false,  c:false   },
+  { wk: '8',  no: '13', name: 'NodeJS Prt2'                                                         ,  l:false, n: false,  t:false,  q: false, c:false   },
+  {		      no: '14', name: 'NodeJS & DB'                                                         ,  l:false, n: false,  t:false, q: false,  c:false   },
+  { wk: '9',  no: '15', name: 'Security (Encryption, Safety, Passwords)'                            ,  l:false, n: false,  t:false,  q: false,  c:false   },
+  {           no: '16', name: 'Hybrid Apps and Mobile (Framework7, Bootstrap, React, AngularJS)	'   ,  l:false, n: false, t:false, q: false, c:false   },
+  { wk: '10', no: '17', name: 'Web Services (SOAP, REST)'                                           ,  l:false, n: false,  t:false,  q: false,  c:false   },
+  {	    	  no: '18', name: 'Design (Web-Analytics, Adaptive UI and UX, Web Robots, Business)'    ,  l:false, n: false,  t:false, q: false, c:false   },
+  { wk: '11', no: '19', name: 'Typescript'                                                          ,  l:false, n: false, t:false, q: false, c:false   },
+  {           no: '20', name: 'Review & Support Lecture'                                            ,  l:false, n: false, t:false, q: false, c:false   },
+  { wk: '12', no: '21', name: 'Review & Support Lecture'                                            ,  l:false, n: false, t:false, q: false, c:false   }
 ];
 
 	// Slides	 	Notes	Labs	Revision	Crossword
